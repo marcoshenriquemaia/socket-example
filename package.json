@@ -1,0 +1,19 @@
+{
+  "name": "socket-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/marcoshenriquemaia/socket-example.git",
+  "author": "marcoshenriquemaia <henriquemarcosmaia@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "4",
+    "socket.io": "^3.1.0"
+  },
+  "scripts": {
+    "dev": "nodemon"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

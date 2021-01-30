@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Document</title>
+</head>
+<body>
+  <form id="chat">
+    <input type="text" name="username" placeholder="Digite seu usuário" class='user-name-field'>
+    <div class='messages'></div>
+    <input type="text" name="message" placeholder="Digite sua mensagem" class='message-field'>
+    <button type='submit'>Enviar</button>
+  </form>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.1.0/socket.io.js" integrity="sha512-+l9L4lMTFNy3dEglQpprf7jQBhQsQ3/WvOnjaN/+/L4i0jOstgScV0q2TjfvRF4V+ZePMDuZYIQtg5T4MKr+MQ==" crossorigin="anonymous"></script>
+  <script src='./index.js'></script>
+</body>
+</html>
