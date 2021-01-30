@@ -2,6 +2,7 @@ const { Socket } = require('dgram')
 const express = require('express')
 const app = express()
 const path = require('path')
+const PORT = process.env.PORT || 9001;
 
 const server = require('http').createServer(app)
 const io = require('socket.io')(server)
@@ -19,7 +20,7 @@ const messageList = []
 
 io.on('connection', socket => {
   console.log(`socket conectado: ${socket.id}`)
-  
+
   socket.emit('previusMessages', messageList)
 
   socket.on(`sendMessage`, data => {
@@ -28,4 +29,4 @@ io.on('connection', socket => {
   })
 })
 
-server.listen(3000)
+server.listen(PORT)
